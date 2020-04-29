@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int i,T,x,y,temp,j;
+long long int sum;
+scanf("%d",&T);
+for(i=1;i<=T;i++){
+    scanf("%d %d",&x,&y);
+
+    sum=0;
+    for(j=0;j<=y;j++){
+      sum=sum+pow(x,j);
+    }
+    printf("Result = %lld\n",sum);
+}
+return 0;
+}

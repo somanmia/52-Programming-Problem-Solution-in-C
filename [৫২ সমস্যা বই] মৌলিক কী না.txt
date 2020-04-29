@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int T,ck;
+long long int num,root,i,j;
+scanf("%d",&T);
+for(i=1;i<=T;i++){
+    scanf("%lld",&num);
+    if(num>1){
+    root=sqrt(num);
+    ck=0;
+    for(j=2;j<=root;j++){
+        if(num%j==0){
+            ck=1;
+            break;
+        }
+    }if(ck==0){
+    printf("%lld is a prime\n",num);
+   }else{
+     printf("%lld is not a prime\n",num);
+   }
+    }
+
+
+
+}
+return 0;
+}
