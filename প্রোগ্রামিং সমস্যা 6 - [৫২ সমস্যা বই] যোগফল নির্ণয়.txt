@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+int T,num,i,fnum,lnum,sum;
+scanf("%d",&T);
+for(i=1;i<=T;i++){
+  scanf("%d",&num);
+   fnum=num/10000;
+   lnum=num%10;
+   sum=fnum+lnum;
+   printf("Sum = %d\n",sum);
+}
+return 0;
+}
