@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+int T,x,y,i,j,result;
+scanf("%d",&T);
+for(i=1;i<=T;i++){
+    scanf("%d %d",&x,&y);
+   if(x>y){
+         printf("Invalid!\n");
+
+   }else{
+
+    result=x;
+         for(j=2;result<=y;j++){
+              printf("%d\n",result);
+              result=x*j;
+
+         }
+   }
+   printf("\n");
+   }
+return 0;
+}
