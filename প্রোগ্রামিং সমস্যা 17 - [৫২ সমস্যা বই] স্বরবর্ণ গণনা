@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+int T,j,total_vowel,len;char ch[1002];
+ scanf("%d",&T);
+   while(T--){
+        scanf("  %[^\n]",ch);
+        total_vowel=0;
+        len=strlen(ch);
+        for(j=0;j<len;j++){
+            if(ch[j]=='a' || ch[j]=='e' || ch[j]=='i' || ch[j]=='o' || ch[j]=='u'){
+                total_vowel++;
+            } else if(ch[j]=='A' || ch[j]=='E' || ch[j]=='I' || ch[j]=='O' || ch[j]=='U'){
+                total_vowel++;
+            }
+        }
+        printf("Number of vowels = %d\n",total_vowel);
+
+   }
+
+
+return 0;
+}
