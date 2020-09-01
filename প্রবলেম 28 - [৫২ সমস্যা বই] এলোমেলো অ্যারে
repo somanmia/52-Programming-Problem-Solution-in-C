@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main(){
+int size,i,j,ck,k,n,m;
+while(scanf("%d",&size)!=EOF){
+int arr[size];
+for(i=0;i<size;i++){
+    scanf("%d",&arr[i]);
+}
+ ck=1;
+ k=size-1;
+for(j=0;j<k;j++){
+    if(arr[j]<arr[j+1]){
+       ck=1;
+    }
+    else{
+       ck=0;
+       break;
+    }
+}
+
+for(m=0;m<k;m++){
+    if(arr[m]>arr[m+1]){
+        n=1;
+    }else{
+        n=0;
+        break;
+    }
+}
+if(ck==1){
+    printf("YES\n");
+}else if(n==1){
+    printf("YES\n");
+}else{
+  printf("NO\n");
+}
+}
+return 0;
+}
