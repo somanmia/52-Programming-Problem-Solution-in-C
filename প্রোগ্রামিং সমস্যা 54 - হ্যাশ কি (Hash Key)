@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+int T,len,len2,sum,sum2;
+scanf("%d",&T);
+while(T--){
+    sum=1;
+    sum2=1;
+    char ch[22];char ch2[22];
+    scanf("%s %s",ch,ch2);
+    len=strlen(ch);
+    len2=strlen(ch2);
+    for(int i=0;i<len;i++){
+        sum=(sum*ch[i])%97;
+
+    }
+    for(int j=0;j<len2;j++){
+        sum2=(sum2*ch2[j])%97;
+
+    }
+    if(sum==sum2){
+        printf("YES\n");
+    }else{
+       printf("NO\n");
+     }
+
+}
+
+
+return 0;
+}
