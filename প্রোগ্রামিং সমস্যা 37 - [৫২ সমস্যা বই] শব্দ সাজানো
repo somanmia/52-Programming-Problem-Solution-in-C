@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+int N,i,j,k;
+scanf("%d",&N);
+char ch[N][1000];
+char temp[1000];
+for(i=0;i<N;i++){
+   scanf("%s",ch[i]);
+}
+for(i=0;i<N;i++){
+    for(j=i+1;j<N;j++){
+        if(strcmp(ch[i],ch[j])>0){
+           strcpy(temp,ch[i]);
+           strcpy(ch[i],ch[j]);
+           strcpy(ch[j],temp);
+        }
+    }
+}
+//printfing.......//
+for(k=0;k<N;k++){
+    printf("%s\n",ch[k]);
+}
+return 0;
+}
